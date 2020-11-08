@@ -1,0 +1,122 @@
+@charset "uft-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900|Oswald:200,300,400,500,600,700&subset=korean');
+
+h1, h2, h3, h4, div, ul, li, dl, dt, dd, p, addredss, header, nav, section, article, footer, aside,figure,main, body,a {margin: 0; padding: 0; box-sizing: border-box;}
+header, nav, main, setion, article, footer, aside, figure {display: block;}
+li {list-style: none;}
+a {text-decoration: none; color: #898989;}
+a img {border: 0;}
+img {vertical-align: middle;}
+.pc {display: none;}
+html, body {font-family: 'Noto Sans KR', sans-serif; }
+
+#mainheader {background: rgb(34, 34, 34,0.9); width: 100%; height: 70px; position: fixed; z-index: 100;}
+.main_icon {margin: 20px auto 0; width: 130px;}
+.main_icon img{width: 110px;}
+.nav_gnb {width: 100%; height: 0; position: fixed; top: 0; left: 0; background: rgb(34, 34, 34,0.9); overflow: hidden; transition: all 0.2s; z-index: 1;}
+.open {font-size: 35px; font-weight: bold; cursor: pointer; position: absolute; top: 5px; left: 20px; color: #eee;}
+.vdlmenu {position: relative; top: 25%; width: 90%; text-align: center; margin: 40px auto 20px; }
+.vdlmenu > li {float: left; width: 50%; }
+.vdlmenu > li > a {display: block; padding: 8px; font-size: 18px; color: #ffffff; text-decoration: none; text-transform: uppercase; transition: all 0.2s;}
+.vdlmenu_f > .vdlmenu_f_m {display: none;}
+
+.closebtn{font-size: 40px; position: absolute; top: 10px; right: 20px; color: #ccc;}
+
+.main_m {width: 100%; height: auto; position: relative;}
+.main_m img{width: 100%; height: 100%;}
+.main_m .hidden_txt {position: absolute; top: 75%; left: 20%; text-align: center; color: #fff; opacity: 0;}
+.main_m .hidden_txt h1{font-size: 80px; line-height: 80px;}
+.main_m .hidden_txt h4{font-size: 20px;}
+
+#topseller {width: 100%; margin: 0 auto;}
+.seller_menu {width: 100%;}
+.seller_menu h2{font-size: 24px; text-transform: uppercase; text-align: center; margin: 20px 0;}
+.seller_menu .product{overflow: hidden; width: 90%; margin: 0 auto;}
+.seller_menu .product li{float: left; width: 45%; margin: 10px; padding: 10px; border: 1px solid #ccc;}
+.product li img {width: 100%;}
+.product li .text {font-size: 16px; text-align: center; width: 90%; margin: 0 auto;}
+.product li .text span{display: none;}
+
+#event {width: 100%; height: 350px; background: linear-gradient(#ff4d38,#f47a6b);}
+#event .eventtext {width: 80%; margin: 0 auto; padding-top: 30px; color: #fff; text-transform: uppercase; text-align: center;}
+.eventtext h1 {font: 55px 'Oswald','sans-serif'; line-height: 65px; font-weight: 500;}
+.eventtext p {font:14px 'Noto Sans KR', sans-serif; margin-top: 10px; font-weight: 200;}
+#event .btn01 {width: 150px; margin: 15px auto 0; background: #fff; color:#f47a6b; text-align: center; font-weight: 600; padding: 10px;}
+
+#insta {width: 100%; position: relative; margin: 20px 0;}
+#insta h2 {font-size: 20px; text-align: center; text-transform: uppercase;}
+#insta p {position: absolute; bottom: 20%; right: 15%; font-size: 18px; color: #999;}
+#insta .instagram {width: 90%; margin: 0 auto; overflow: hidden;}
+#insta .pic {float: left; width: 30%; margin: 5px;}
+#insta .pic img{width: 100%;}
+
+footer {width: 100%; border-top: 1px solid #ccc; margin-top: 10px}
+footer p {font-size: 8px;}
+footer article{width: 100%; color: #777; text-align: center;}
+footer ul{overflow: hidden; width: 80%; margin: 0 auto;}
+footer .sns ul li{float: left; width: 25%; font-size: 30px; display: inline-block; margin: 5px 0; margin-top: 10px;}
+.footermenu ul li{float: left; font-size: 14px; width: 30%; margin: 5px 5px; border-right: 1px solid #eee; text-align: center;}
+.footertxt {width: 80%; border-bottom: 1px solid #ccc; margin: 10px auto; padding-bottom: 10px;}
+
+
+/*sub1*/
+.main_page {padding-top: 80px;}
+.pro_bg {height: 230px; margin-top: 30px; }
+.pro_menu {width: 100%; overflow: hidden;}
+.pro_menu a{width: 50%; float: left; border: 1px solid #ccc; text-align: center;}
+.pro_menu-in {width: 100%; height: 100px; text-align: center; position: relative;}
+.pro_m_in {position: absolute; top: 150px; left: 25%;}
+.pro_m_in a{width: 60px; display: inline-block; text-align: center;}
+.pro_m_in a.on{color: #fff; background: #222;}
+.pro_item {width: 100%;}
+.pro_item ul {width: 90%; overflow: hidden; margin: 0 auto;}
+.pro_item ul li{float: left; width: 44%; margin-left: 20px; margin-bottom: 10px; text-align: center;}
+.pro_item .text {font-size: 16px; padding: 0 10px; color: #444;}
+.pro_item .btnprice {display: inline-block; margin-top: 10px; border: 1px solid #555; padding: 5px 10px; border-radius: 10px; font-size: 13px; color: #555;}
+.pro_item ul li img{width: 100%;}
+.pagebtn {width: 70px; margin: 20px auto 10px;}
+.indicator {display: inline-block; width: 13px; height: 13px; border: 3px solid #999; border-radius: 20px; overflow: hidden; text-indent: -999px; margin: 0 3px;}
+
+/*sub2*/
+.brandstory {width: 48%; float: right; font-size: 14px;}
+.brandstory img{width: 48%; float: left;}
+.brandstory h1{font-size: 54px; margin-top: 10%;}
+.brandstory h2{font-size: 20px; margin-bottom: 10px; color: #a00025;}
+.atc_brandstory {width: 95%; margin: 0 auto; overflow: hidden;}
+.story_mainimg {float: left; width: 48%; height: 100%;}
+.story_mainimg img{width: 100%; height: 100%;}
+.vdlstory{display: block; margin: 80px 0; overflow: hidden;}
+.VDL_mainimg {float: right; width: 50%;}
+.box02 .text {float: left; width: 40%; margin: 0 10px;}
+.box02 .text strong {font-size: 35px; display: block; text-align: right; color: #a00025; margin-bottom: 30px; line-height: 40px;}
+.box02 .text span {font-size: 11px; color: #999; line-height: 10px;}
+.videostory {width: 90%; height: 450px; text-align: center; margin: 30px auto; font-size: 14px;}
+.videotext {padding-bottom: 20px;}
+.videotext h2{color: #a00025; font-size: 30px; text-transform: uppercase;}
+.videoalign {position: relative; width: 100%;height: 0; padding-bottom: 56.25%;}
+.videoalign iframe {width: 100%; height: 250px;}
+
+
+/*sub3*/
+.col_main {width: 100%;}
+.col_main img{width: 100%;}
+.sub_colin {width: 100%;}
+.sub_colin li {margin: 10px 0;}
+.sub_colin img {width: 100%;}
+
+/*sub4*/
+#eventmenu {width: 60%; border: 1px solid #ddd; display: block; text-align: center; height: 40px; margin: 0 auto;}
+#eventmenu .event01{display: inline-block; float: left; width: 50%; height: 100%;  color: #fff; background: #222; padding-top: 5px; margin-right: 5px;}
+#eventmenu .event02{float: left; width: 45%; display: inline-block; padding: 5px 0; }
+#eventpage {width: 100%; overflow: hidden; height: 100%;}
+#eventpage article {float: left; margin-bottom: 100px;}
+#eventpage .event_s {float: left; width: 47%; margin: 5px; height: 150px;}
+#eventpage article:nth-child(1) {width: 100%; height: 250px; background: url(../img/sub4/event1.png);}
+#eventpage article:nth-child(2) { background: url(../img/sub4/event2.png) center / cover;}
+#eventpage article:nth-child(3) { background: url(../img/sub4/event3.png) center / cover;}
+#eventpage article:nth-child(4) { background: url(../img/sub4/event4.png) center / cover;}
+#eventpage article:nth-child(5) { background: url(../img/sub4/event5.jpg) center / cover;}
+#eventpage article .mask {opacity: 1; background:#fff;transform: translateY(250px); height: 80px; color: #222; }
+#eventpage .event_s .mask {display: none;}
+#eventpage .mask h2 {font-size: 20px; width: 90%; margin: 0 auto; padding-top: 10px}
+#eventpage .mask p {width: 90%; margin: 0 auto; padding-top: 5px; font-size: 14px; color: #555;}
