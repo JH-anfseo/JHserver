@@ -7,15 +7,17 @@ if (document.getElementById("my-work-link")) {
   });
 }
 const hamburger = document.querySelector(".hamburger");
+const hamburgerbg = document.querySelector(".hamburger-bg");
 const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", mobileMenu);
+hamburgerbg.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
   hamburger.classList.toggle("active");
+  hamburgerbg.classList.toggle("active");
   navMenu.classList.toggle("active");
 }
-
 // 메뉴 클릭시 메뉴바가 사라지도록
 const navLink = document.querySelectorAll(".nav-link");
 

@@ -118,7 +118,13 @@
   margin-bottom: 0.1rem;
   display: none;
 }
-
+.hamburger-bg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(212, 212, 212, 0.428);
+}
 .bar {
   display: block;
   width: 23px;
@@ -152,7 +158,7 @@
 
 .about-section-content,
 .Education-container {
-  width: 45%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
@@ -186,7 +192,7 @@
   min-height: 10rem;
   flex-direction: column;
   display: flex;
-  gap: 16px;
+  gap: 0.625rem;
 }
 
 .my-work-image {
@@ -220,7 +226,26 @@
   font-size: 16px;
   font-weight: var(--weight-small);
 }
-
+.body-text li {
+  line-height: 1.6;
+}
+.body-text .body-text-date {
+  color: var(--text-color-thr);
+}
+.body-text .body-text-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: var(--primary-color);
+  z-index: -1;
+}
+.body-text .body-text-title {
+  position: relative;
+  font-weight: var(--weight-semibold);
+}
 .my-work-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -301,36 +326,33 @@
 @media (max-width: 670px) {
   .navbar .nav-menu {
     position: fixed;
-    right: -100vw;
-    top: 4.5rem;
+    right: -97vw;
+    top: 6rem;
     flex-direction: column;
-    width: calc(80% - 10px);
+    width: 100%;
     transition: 0.3s;
-    box-shadow: var(--shadow);
     padding: 2rem;
     border-radius: 5px;
     align-items: flex-start;
   }
-
   .navbar .btn {
     margin: 0;
     margin-top: 1rem;
   }
 
   .nav-menu.active {
-    right: 20px;
+    right: 0;
   }
 
   .nav-menu .nav-link {
-    font-size: 0.9rem;
-    margin: 0 0.2rem;
+    font-size: 18px;
+    margin: 0 0.5rem;
   }
 
   .nav-menu li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.9375rem;
     width: 100%;
   }
-
   .nav-menu .btn {
     width: 100%;
     text-align: center;
@@ -341,6 +363,10 @@
     display: block;
     cursor: pointer;
     padding: 0.2rem 0.4rem;
+  }
+  .hamburger-bg.active {
+    display: block;
+    z-index: 1;
   }
 
   .hamburger.active {
