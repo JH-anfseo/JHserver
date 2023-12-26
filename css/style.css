@@ -239,7 +239,7 @@
   left: 0;
   width: 100%;
   height: 60%;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   z-index: -1;
 }
 .body-text .body-text-title {
