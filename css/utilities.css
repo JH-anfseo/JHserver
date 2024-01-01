@@ -7,7 +7,7 @@
   --bg-primary: #ffffff;
   --text-color: #222222;
   --text-color-two: #ffffff;
-  --text-color-thr: #aeaeae;
+  --text-color-thr: #939393;
   --bg-secondary: #000000;
   --card-background: #f4f4f4;
   --bg-secondary-two: #111111;
@@ -31,7 +31,7 @@
   --bg-primary: #000000;
   --text-color: #ffffff;
   --text-color-two: #222222;
-  --text-color-thr: #aeaeae;
+  --text-color-thr: #949494;
   --bg-secondary: #ffffff;
   --card-background: #111111;
   --bg-secondary-two: #f4f4f4;
@@ -48,22 +48,19 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
 /* Main styling */
 body {
   background: var(--bg-primary);
   color: var(--text-color);
   font-family: "NanumSquare", sans-serif;
   line-height: 1.5;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .container {
