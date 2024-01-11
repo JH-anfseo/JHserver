@@ -530,7 +530,7 @@
 }
 /* work 5 */
 #my-work-section .my-work-card:nth-child(5) img {
-  content: url(../assets/images/my-project05.jpg);
+  content: url(../assets/images/portfolio.png);
 }
 
 /* project Image */
