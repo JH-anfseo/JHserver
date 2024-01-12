@@ -4,25 +4,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: 9.375rem;
   padding: 1rem;
 }
-
 .header-container > div {
   margin-top: 1rem;
 }
 
 .content-text {
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 1.875rem 0;
 }
-
-.content-text h2 {
-  font-size: 3rem;
+.content-text .main-title {
+  margin: 1rem;
+}
+.content-text .main-title h2 {
+  font-size: 48px;
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.125rem;
   line-height: 1.2;
   transition: 0.2s ease-in-out;
 }
-
 .content-text p {
   padding: 0.5rem;
   margin: 0 auto;
@@ -43,7 +45,7 @@
 
 .navbar {
   width: 100%;
-  padding: 30px 50px;
+  padding: 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,13 +97,13 @@
 
 .navbar .nav-link {
   margin: 0 1rem;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: var(--weight-semibold);
 }
 
-.navbar #logo img {
+.navbar #logo {
   display: block;
-  width: 40px;
+  font-weight: var(--weight-bold);
 }
 
 .navbar .btn {
@@ -141,9 +143,8 @@
   flex-direction: column;
   height: 100%;
 }
-
 .profile-image {
-  width: 150px;
+  width: 180px;
   border-radius: 50%;
 }
 
@@ -315,8 +316,8 @@
     margin-top: 7rem;
     text-align: center;
   }
-  .content-text h2 {
-    font-size: 2.5rem;
+  .content-text .main-title h2 {
+    font-size: 2.25rem;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and below) */
