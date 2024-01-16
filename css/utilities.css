@@ -1,9 +1,10 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap");
 /* variables */
 :root {
   /* Colors */
-  --primary-color: #ffc113;
-  --secondary-color: #ffd35c;
+  --primary-color: #f95700;
+  --secondary-color: #fcedda;
   --bg-primary: #ffffff;
   --text-color: #090909;
   --text-color-two: #ffffff;
@@ -18,17 +19,24 @@
   --weight-small: 400;
   --weight-semibold: 700;
   --weight-bold: 800;
+  --weight-Exbold: 900;
 
   /* Max width */
   --width-small: 800px;
   --width-medium: 1100px;
   --width-large: 1300px;
+
+  /* font-animation */
+  --size-exsmall: 44px;
+  --size-small: 60px;
+  --size-medium: 80px;
+  --size-large: 110px;
 }
 
 [data-theme="dark"] {
-  --primary-color: #ffc113;
-  --secondary-color: #e6ae14;
-  --bg-primary: #090909;
+  --primary-color: #f95700;
+  --secondary-color: #f95700;
+  --bg-primary: #000000;
   --text-color: #ffffff;
   --text-color-two: #222222;
   --text-color-thr: #949494;
@@ -62,6 +70,15 @@ a {
   text-decoration: none;
   color: var(--text-color);
 }
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
 
 .container {
   max-width: var(--width-medium);
@@ -84,7 +101,7 @@ h2::selection {
   padding: 0.75rem 1.9rem;
   border-radius: 30px;
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 16px;
   transition: 0.3s;
 }
 

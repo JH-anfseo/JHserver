@@ -1,9 +1,11 @@
 // 클릭시 해당 페이지로 이동 (스크롤 : 부드럽게)
-if (document.getElementById("my-work-link")) {
-  document.getElementById("my-work-link").addEventListener("click", () => {
-    document
-      .getElementById("my-work-section")
-      .scrollIntoView({ behavior: "smooth" });
+if (document.getElementById("my-work-button")) {
+  document.getElementById("my-work-button").addEventListener("click", () => {
+    document.getElementById("my-work-section").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
   });
 }
 const hamburger = document.querySelector(".hamburger");

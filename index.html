@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <!-- 아이콘 -->
-    <link rel="icon" type="image/x-icon" href="./assets/images/profile.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon/profile.png" />
     <title>서재희 포트폴리오</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="서재희의 포트폴리오 웹페이지입니다." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -32,7 +33,6 @@
           </p>
           <!-- Navbar links -->
           <ul class="nav-menu">
-            <li><a class="nav-link" href="#Project-section">PROJECTS</a></li>
             <li>
               <a
                 class="nav-link"
@@ -44,9 +44,9 @@
             <li>
               <a
                 class="nav-link"
-                href="https://jhee-web.tistory.com/"
+                href="https://www.behance.net/jhseo6"
                 target="_blank"
-                >BlOG</a
+                >Behance</a
               >
             </li>
             <li>
@@ -76,8 +76,37 @@
       </nav>
       <div class="hamburger-bg"></div>
       <section class="header-container">
-        <img class="profile-image" src="assets/images/profile.jpg" alt="" />
+        <div class="main-page">
+          <div class="main-page-title">
+            <div class="main-page-animation">
+              <ul class="slider">
+                <li class="slide">
+                  <p>hardworking</p>
+                </li>
+                <li class="slide">
+                  <p>complete</p>
+                </li>
+                <li class="slide">
+                  <p>creative</p>
+                </li>
+              </ul>
+            </div>
+            <p class="main-page-subtitle">
+              Web Design Port-folio Works <span id="datee"></span>
+            </p>
+          </div>
+          <button type="button" id="my-work-button">
+            <a href="#about-section" class="btn btn-primary"
+              >About me <img src="assets/images/무제-1.png"
+            /></a>
+          </button>
+        </div>
         <div class="content-text">
+          <img
+            class="profile-image"
+            src="assets/images/profile.jpg"
+            alt="프로필이미지"
+          />
           <h3>Welcome to my Portfolio!👋</h3>
           <div class="main-title">
             <h2>성실함과 노력으로 똘똘 뭉쳐진</h2>
@@ -90,9 +119,6 @@
             노력하고 있습니다.
           </p>
         </div>
-        <a href="#main-content" class="btn btn-primary"
-          ><i class="fa-solid fa-chevron-down"></i
-        ></a>
       </section>
     </header>
 
@@ -400,7 +426,7 @@
       </div>
       <!--Project SECTION -->
       <div id="project-section">
-        <span class="subheader-text">Projects</span>
+        <span class="subheader-text">Publish Projects</span>
         <article class="my-work-container">
           <!-- work1 -->
           <div class="my-work-card">
